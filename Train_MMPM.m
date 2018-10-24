@@ -39,7 +39,7 @@ path2model = [p, filesep, 'Model', filesep, conf.training]; % path to model
 conf.mat_file_EM = [path2model, filesep, 'conf_MMPM_', conf.FLAG, '_x', ...
     num2str(conf.scale), '_cls_', num2str(conf.maxK), '_delta_', num2str(delta)];
 tic
-path2train = [p, filesep, 'Data', filesep, 'training', filesep, conf.training];
+path2train = [p, filesep, 'Data', filesep, 'Training', filesep, conf.training];
 patt2train = '*.jpg';      % pattern of training images
 hires = load_images(glob(path2train, patt2train));
 learn_model_PCA(hires, conf);
